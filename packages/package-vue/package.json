@@ -1,13 +1,14 @@
 {
   "name": "@holyfata/qrcode-vue",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "private": true,
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "rslib build && vue-tsc"
+    "build": "rslib build && vue-tsc",
+    "release": "changelogen --bump --release --publishTa=false"
   },
   "devDependencies": {
     "@rsbuild/plugin-vue": "1.0.7",
