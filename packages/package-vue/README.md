@@ -1,0 +1,1 @@
+# @holyfata/qrcode-vue

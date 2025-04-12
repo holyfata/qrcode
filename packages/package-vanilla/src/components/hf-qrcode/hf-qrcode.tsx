@@ -1,6 +1,7 @@
 import { Component, Prop, State, h, Host, Watch } from '@stencil/core';
 import { toCanvas, toDataURL, toString } from 'qrcode';
 
+// Event name dispatched when the QR code generation is complete
 const EVENT_READY = 'ready';
 
 @Component({
@@ -8,17 +9,24 @@ const EVENT_READY = 'ready';
   shadow: true,
 })
 export class HfQrcode {
+  // Input value for the QR code
   @Prop() value: string | undefined;
+
+  // Options for QR code generation (e.g., error correction level, size)
   @Prop() options: object | undefined;
+
+  // Tag type for rendering the QR code ('canvas', 'img', or 'svg')
   @Prop() tag: string = 'canvas';
 
+  // Internal state to store the root element reference
   @State() private element: HTMLElement | null = null;
 
+  // Lifecycle method: Called once the component is fully loaded
   componentDidLoad() {
-    console.error('hyq---componentWillLoad', this.element);
     this.generate();
   }
 
+  // Watch for changes in `value`, `options`, or `tag` props and regenerate the QR code
   @Watch('value')
   @Watch('options')
   @Watch('tag')
@@ -28,15 +36,19 @@ export class HfQrcode {
     }
   }
 
+  // Generate the QR code based on the selected tag type
   private generate() {
-    const options = this.options || {};
-    const value = String(this.value);
+    const options = this.options || {}; // Default to an empty object if no options are provided
+    const value = String(this.value); // Ensure the value is a string
+
+    // Callback to dispatch the ready event
     const done = () => {
       this.element?.dispatchEvent(new CustomEvent(EVENT_READY, { detail: this.element }));
     };
-    console.error('hyq---generate', this.element, value, options, this.tag);
+
+    // Handle QR code generation based on the tag type
     switch (this.tag) {
-      case 'canvas':
+      case 'canvas': {
         const canvasTarget = this.element?.querySelector('canvas') as HTMLCanvasElement;
         if (canvasTarget) {
           toCanvas(canvasTarget, value, options, (error) => {
@@ -47,7 +59,8 @@ export class HfQrcode {
           });
         }
         break;
-      case 'img':
+      }
+      case 'img': {
         const imgTarget = this.element?.querySelector('img') as HTMLImageElement;
         if (imgTarget instanceof HTMLImageElement) {
           toDataURL(value, options, (error, url) => {
@@ -59,7 +72,8 @@ export class HfQrcode {
           });
         }
         break;
-      case 'svg':
+      }
+      case 'svg': {
         const svgTarget = this.element?.querySelector('svg') as SVGSVGElement;
         if (svgTarget instanceof SVGElement) {
           toString(value, options, (error, string) => {
@@ -70,6 +84,7 @@ export class HfQrcode {
             div.innerHTML = string;
             const svg = div.querySelector('svg');
             if (svg) {
+              // Copy attributes and child nodes from the generated SVG to the target SVG
               const { attributes, childNodes } = svg;
               Object.keys(attributes).forEach((key) => {
                 const attribute = attributes[Number(key)];
@@ -84,10 +99,13 @@ export class HfQrcode {
           });
         }
         break;
+      }
       default:
+        console.warn(`Unsupported tag type: ${this.tag}`);
     }
   }
 
+  // Render the component based on the selected tag type
   render() {
     return (
       <Host>
@@ -99,4 +117,4 @@ export class HfQrcode {
       </Host>
     );
   }
-}    
+}
