@@ -1,7 +1,6 @@
 {
   "name": "@holyfata/qrcode-vanilla",
-  "version": "3.2.0",
-  "description": "Stencil Component Starter",
+  "version": "3.3.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -19,10 +18,6 @@
       "types": "./loader/index.d.ts"
     },
     "./dist/*": "./dist/*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/stenciljs/component-starter.git"
   },
   "files": [
     "dist/",
@@ -46,8 +41,22 @@
     "@stencil/vue-output-target": "0.10.7",
     "@types/qrcode": "1.5.5"
   },
-  "license": "MIT",
   "dependencies": {
     "qrcode": "1.5.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/qrcode",
+    "directory": "packages/package-vanilla"
+  },
+  "keywords": [
+    "vanilla",
+    "qrcode",
+    "generator",
+    "qr",
+    "code"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A Vanilla 3 component for generating QR codes."
 }

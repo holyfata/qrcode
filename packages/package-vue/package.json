@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-vue",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "private": false,
   "type": "module",
   "main": "./dist/index.js",
@@ -26,5 +26,20 @@
   "peerDependencies": {
     "@holyfata/qrcode-vanilla": "^3.0.0",
     "vue": ">=3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/qrcode",
+    "directory": "packages/package-vue"
+  },
+  "keywords": [
+    "vue",
+    "qrcode",
+    "generator",
+    "qr",
+    "code"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A Vue 3 component for generating QR codes."
 }

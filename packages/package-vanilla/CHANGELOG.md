@@ -1,5 +1,18 @@
 # @holyfata/qrcode-vanilla
 
+## v3.3.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v3.2.0...v3.3.0)
+
+### 🚀 Enhancements
+
+- Add npm test project ([2a85d48](https://github.com/holyfata/qrcode/commit/2a85d48))
+- Add npm test project ([282ee9d](https://github.com/holyfata/qrcode/commit/282ee9d))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
 ## v3.2.0
 
 [compare changes](https://github.com/stenciljs/component-starter/compare/v3.1.0...v3.2.0)

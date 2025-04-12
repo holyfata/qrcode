@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-react",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "type": "module",
   "exports": {
     ".": {
@@ -35,5 +35,20 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
     "@holyfata/qrcode-vanilla": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holyfata/qrcode",
+    "directory": "packages/package-react"
+  },
+  "keywords": [
+    "react",
+    "qrcode",
+    "generator",
+    "qr",
+    "code"
+  ],
+  "author": "HolyFata",
+  "license": "MIT",
+  "description": "A React 3 component for generating QR codes."
 }
