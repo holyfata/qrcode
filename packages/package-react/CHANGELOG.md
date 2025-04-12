@@ -1,5 +1,17 @@
 # @holyfata/qrcode-react
 
+## v2.1.2
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.1...v2.1.2)
+
+### 🏡 Chore
+
+- **release:** V2.1.1 ([9b1dd91](https://github.com/holyfata/qrcode/commit/9b1dd91))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
 ## v2.1.1
 
 [compare changes](https://github.com/holyfata/qrcode/compare/v2.1.0...v2.1.1)
