@@ -37,6 +37,15 @@
                 "@holyfata/qrcode-vue#build"
             ]
         },
-        "release": {}
+        "bump": {
+            "dependsOn": [
+                "build:pkg"
+            ]
+        },
+        "release": {
+            "dependsOn": [
+                "bump"
+            ]
+        }
     }
 }

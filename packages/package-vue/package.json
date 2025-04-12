@@ -1,14 +1,19 @@
 {
   "name": "@holyfata/qrcode-vue",
-  "version": "2.1.2",
-  "private": true,
+  "version": "2.6.0",
+  "private": false,
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "rslib build && vue-tsc",
-    "release": "changelogen --bump --no-tag"
+    "bump": "changelogen --bump --no-tag",
+    "release": "changelogen --publish"
   },
   "devDependencies": {
     "@rsbuild/plugin-vue": "1.0.7",

@@ -1,5 +1,65 @@
 # @holyfata/qrcode-react
 
+## v2.6.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.6.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
+## v2.5.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.5.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
+## v2.4.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.4.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
+## v2.3.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.3.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
+## v2.2.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.2.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
 ## v2.1.2
 
 [compare changes](https://github.com/holyfata/qrcode/compare/v2.1.1...v2.1.2)

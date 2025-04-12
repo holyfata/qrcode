@@ -4,6 +4,7 @@
 		"build": "turbo run build",
 		"build:pkg": "turbo run build:pkg",
 		"version": "changeset version",
+		"bump": "turbo run bump",
 		"release": "turbo run release"
 	},
 	"devDependencies": {

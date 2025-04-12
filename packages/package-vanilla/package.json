@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-vanilla",
-  "version": "2.1.2",
+  "version": "2.6.0",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -28,11 +28,16 @@
     "dist/",
     "loader/"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "generate": "stencil generate",
-    "release": "changelogen --bump"
+    "bump": "changelogen --bump",
+    "release": "changelogen --publish"
   },
   "devDependencies": {
     "@stencil/core": "^4.27.1",

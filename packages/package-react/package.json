@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-react",
-  "version": "2.1.2",
+  "version": "2.6.0",
   "type": "module",
   "exports": {
     ".": {
@@ -13,9 +13,14 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "build": "rslib build",
-    "release": "changelogen --bump --no-tag"
+    "bump": "changelogen --bump --no-tag",
+    "release": "changelogen --publish"
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "1.2.0",
