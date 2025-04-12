@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-react",
-  "version": "2.6.0",
+  "version": "3.0.1",
   "type": "module",
   "exports": {
     ".": {

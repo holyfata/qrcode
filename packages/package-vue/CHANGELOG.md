@@ -1,5 +1,22 @@
 # @holyfata/qrcode-vue
 
+## v3.0.1
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v3.0.0...v3.0.1)
+
+## v2.7.0
+
+[compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.7.0)
+
+### 🚀 Enhancements
+
+- Control th version ([fd7f108](https://github.com/holyfata/qrcode/commit/fd7f108))
+- Clean the worktree ([472f94f](https://github.com/holyfata/qrcode/commit/472f94f))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
 ## v2.6.0
 
 [compare changes](https://github.com/holyfata/qrcode/compare/v2.1.2...v2.6.0)
