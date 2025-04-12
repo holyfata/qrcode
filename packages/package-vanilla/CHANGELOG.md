@@ -1,5 +1,17 @@
 # @holyfata/qrcode-vanilla
 
+## v3.2.0
+
+[compare changes](https://github.com/stenciljs/component-starter/compare/v3.1.0...v3.2.0)
+
+### 🚀 Enhancements
+
+- Change the workspace ([b1a9e4b](https://github.com/stenciljs/component-starter/commit/b1a9e4b))
+
+### ❤️ Contributors
+
+- Holyfata ([@holyfata-reproduction](https://github.com/holyfata-reproduction))
+
 ## v3.1.0
 
 [compare changes](https://github.com/stenciljs/component-starter/compare/v3.0.0...v3.1.0)

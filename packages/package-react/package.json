@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-react",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "type": "module",
   "exports": {
     ".": {
@@ -34,6 +34,6 @@
     "@stencil/react-output-target": "1.0.2",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
-    "@holyfata/qrcode-vanilla": "latest"
+    "@holyfata/qrcode-vanilla": "^3.0.0"
   }
 }

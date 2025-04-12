@@ -61,6 +61,43 @@ importers:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.14.1)(typescript@5.8.3)
 
+  apps/app-react-npm:
+    dependencies:
+      react:
+        specifier: ^19.0.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.1.0(react@19.1.0)
+    devDependencies:
+      '@holyfata/qrcode-react':
+        specifier: ^3.0.0
+        version: 3.1.0(@holyfata/qrcode-vanilla@3.1.0)(@stencil/react-output-target@1.0.2(@stencil/core@4.29.2)(@types/react@19.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@holyfata/qrcode-vanilla':
+        specifier: ^3.0.0
+        version: 3.1.0
+      '@rspack/cli':
+        specifier: ^1.3.4
+        version: 1.3.4(@rspack/core@1.3.4(@swc/helpers@0.5.17))(@types/express@4.17.21)(webpack@5.99.5)
+      '@rspack/core':
+        specifier: ^1.3.4
+        version: 1.3.4(@swc/helpers@0.5.17)
+      '@rspack/plugin-react-refresh':
+        specifier: ^1.1.0
+        version: 1.2.0(react-refresh@0.17.0)
+      '@types/react':
+        specifier: ^19.1.0
+        version: 19.1.1
+      '@types/react-dom':
+        specifier: ^19.1.1
+        version: 19.1.2(@types/react@19.1.1)
+      react-refresh:
+        specifier: ^0.17.0
+        version: 0.17.0
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.14.1)(typescript@5.8.3)
+
   apps/app-vue:
     dependencies:
       vue:
@@ -70,6 +107,31 @@ importers:
       '@holyfata/qrcode-vue':
         specifier: workspace:*
         version: link:../../packages/package-vue
+      '@rspack/cli':
+        specifier: ^1.3.4
+        version: 1.3.4(@rspack/core@1.3.4(@swc/helpers@0.5.17))(@types/express@4.17.21)(webpack@5.99.5)
+      '@rspack/core':
+        specifier: ^1.3.4
+        version: 1.3.4(@swc/helpers@0.5.17)
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.14.1)(typescript@5.8.3)
+      vue-loader:
+        specifier: ^17.4.2
+        version: 17.4.2(vue@3.5.13(typescript@5.8.3))(webpack@5.99.5)
+
+  apps/app-vue-npm:
+    dependencies:
+      vue:
+        specifier: ^3.5.13
+        version: 3.5.13(typescript@5.8.3)
+    devDependencies:
+      '@holyfata/qrcode-vanilla':
+        specifier: ^3.0.0
+        version: 3.1.0
+      '@holyfata/qrcode-vue':
+        specifier: ^3.0.0
+        version: 3.1.0(@holyfata/qrcode-vanilla@3.1.0)(vue@3.5.13(typescript@5.8.3))
       '@rspack/cli':
         specifier: ^1.3.4
         version: 1.3.4(@rspack/core@1.3.4(@swc/helpers@0.5.17))(@types/express@4.17.21)(webpack@5.99.5)
@@ -167,28 +229,24 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@ast-grep/napi-linux-arm64-musl@0.36.2':
     resolution: {integrity: sha512-RIuk0VaQW2b5uOPJzuYFQBwMZIEVnp6maXPjnatUHxfniirSI172E7LtOU/FIEpCjU9Fpq23A79S43ImFt1KLA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@ast-grep/napi-linux-x64-gnu@0.36.2':
     resolution: {integrity: sha512-Xmb50HPfRNi+iLtHp+8/dqiTd8tjArYxOdj1tZzjRndpKhFpQDVrcOnPFObDCRgxVeLovdql9A1ad6BMcEL01Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@ast-grep/napi-linux-x64-musl@0.36.2':
     resolution: {integrity: sha512-RSnqCsl3OBfJWh2rETtv3o7xd4QnbB2YTh6H6oYfFhhX0tlon/V+bUXI77hU2/W73hj9GHqWZsygsF43NXn/Hw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@ast-grep/napi-win32-arm64-msvc@0.36.2':
     resolution: {integrity: sha512-/Q85h8F9K2G8qig0lndZWb+ykCfhfpSN27F3i7Aw5C0Ph7S6vFH76xn3l3dJTZb2CwUSsv4JNoqmFmY4B8DExQ==}
@@ -296,6 +354,23 @@ packages:
     resolution: {integrity: sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==}
     engines: {node: '>=10.0.0'}
 
+  '@holyfata/qrcode-react@3.1.0':
+    resolution: {integrity: sha512-xRxA5T1qjXU5/aizmPoLHtRfGwjOlbuFiWWo4cm7m7Swgq3uRRBCy5zEtBWVQZWlLeyDxKBxGIVU+QbMeV1a3w==}
+    peerDependencies:
+      '@holyfata/qrcode-vanilla': latest
+      '@stencil/react-output-target': 1.0.2
+      react: '>=16.9.0'
+      react-dom: '>=16.9.0'
+
+  '@holyfata/qrcode-vanilla@3.1.0':
+    resolution: {integrity: sha512-3DXv57AygZl84vJrpHXl0yLjGGMubU1IKcKF5aId0eH8/+SVFngyQYBcsWWW2da0haktA3H4uYD9n60M3EP2Dg==}
+
+  '@holyfata/qrcode-vue@3.1.0':
+    resolution: {integrity: sha512-/HDg9Mv6HYG83TTGMrwhIXlCZCVwS9xVXYRJ73hGsd+aTOS2hBZMBDUF7h3PtanSBJdS7sI1F9s7l1e27AtuGw==}
+    peerDependencies:
+      '@holyfata/qrcode-vanilla': latest
+      vue: '>=3.0.0'
+
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
     engines: {node: '>=6.0.0'}
@@ -399,25 +474,21 @@ packages:
     resolution: {integrity: sha512-6TZjPHjKZUQKmVKMUowF3ewHxctrRR09eYyvT5eFv8w/fXarEra83A2mHTVJLA5xU91aCNOUnM+DWFMSbQ0Nxw==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.34.9':
     resolution: {integrity: sha512-LD2fytxZJZ6xzOKnMbIpgzFOuIKlxVOpiMAXawsAZ2mHBPEYOnLRK5TTEsID6z4eM23DuO88X0Tq1mErHMVq0A==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-x64-gnu@4.34.9':
     resolution: {integrity: sha512-FwBHNSOjUTQLP4MG7y6rR6qbGw4MFeQnIBrMe161QGaQoBQLqSUEKlHIiVgF3g/mb3lxlxzJOpIBhaP+C+KP2A==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.34.9':
     resolution: {integrity: sha512-cYRpV4650z2I3/s6+5/LONkjIz8MBeqrk+vPXV10ORBnshpn8S32bPqQ2Utv39jCiDcO2eJTuSlPXpnvmaIgRA==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.34.9':
     resolution: {integrity: sha512-z4mQK9dAN6byRA/vsSgQiPeuO63wdiDxZ9yg9iyX2QTzKuQM7T4xlBoeUP/J8uiFkqxkcWndWi+W7bXdPbt27Q==}
@@ -481,49 +552,41 @@ packages:
     resolution: {integrity: sha512-Lluq3RLYzyCMdXr/HyALKEPGsr+196x8Ccuy5AmIRosOdWuwtSiomSRH1Ka8REUFNHfYy5y9SzfmIZo/E0QEmg==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-gnu@1.3.4':
     resolution: {integrity: sha512-c45kQrqzR05Jc62oAetiAXrnPWhyt3Pz1h2LF62OW8SYXxdBskAKpWntTts/T96HMLqNPH3MAfDKxyfOb/n0eQ==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-arm64-musl@1.3.3':
     resolution: {integrity: sha512-PIsicXWjOqzmoOutUqxpMNkCoKo+8/wxDyKxHFeu+5WIAxVFphe2d3H5qvEjc2MasWSdRmAVn9XiuIj2LIXFzA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-arm64-musl@1.3.4':
     resolution: {integrity: sha512-/dUvkcBVnV95tA7BpeA6IZhrbpwxFzvgU6qF/iKxyHdMjwHdjn1Um7nR00TPOn/SIHzljafHpL6CuVTLNB5xvA==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-gnu@1.3.3':
     resolution: {integrity: sha512-BtksK73ZFdny2T/wU1x0kxBF4ruYUUArZDyeGfpO+vd/1nNYqzzdhGvOksKmtdvsO38ETr2gZ9+XZyr1vpy9uQ==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-gnu@1.3.4':
     resolution: {integrity: sha512-jZgGKoH7RyqJbyEcvhEE9wqK6mwoWxLF3c3LD2+e+dKVcO5iCfMuulCGdzUnYyvH97CtvN5j0/20PErRXubyjg==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rspack/binding-linux-x64-musl@1.3.3':
     resolution: {integrity: sha512-jx86CxkTmyBz/eHDqZp1mCqBwY+UTEtaPlPoWFyGkJUR5ey6nQnxS+fhG34Rqz63chW+q/afwpGNGyALYdgc8g==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-linux-x64-musl@1.3.4':
     resolution: {integrity: sha512-Xko8mZ598vQDubig4rLTuCDjXplSDJbJEg6B3NykGaE6CMH2bI/6KJfVKEKo25ayNzoouT/1MxyOxB4mQuspbA==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rspack/binding-win32-arm64-msvc@1.3.3':
     resolution: {integrity: sha512-uXAdDzajFToVrH3fCNVDP/uKQ9i5FQjJc2aYxsnhS9Su/CZB+UQsOecbq6MnIN2s0B9GBKBG8QdQEtS3RtC6Hg==}
@@ -2708,6 +2771,22 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.9
 
   '@discoveryjs/json-ext@0.5.7': {}
+
+  '@holyfata/qrcode-react@3.1.0(@holyfata/qrcode-vanilla@3.1.0)(@stencil/react-output-target@1.0.2(@stencil/core@4.29.2)(@types/react@19.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@holyfata/qrcode-vanilla': 3.1.0
+      '@stencil/react-output-target': 1.0.2(@stencil/core@4.29.2)(@types/react@19.1.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+
+  '@holyfata/qrcode-vanilla@3.1.0':
+    dependencies:
+      qrcode: 1.5.4
+
+  '@holyfata/qrcode-vue@3.1.0(@holyfata/qrcode-vanilla@3.1.0)(vue@3.5.13(typescript@5.8.3))':
+    dependencies:
+      '@holyfata/qrcode-vanilla': 3.1.0
+      vue: 3.5.13(typescript@5.8.3)
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
