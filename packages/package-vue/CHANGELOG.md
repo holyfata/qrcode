@@ -1,4 +1,4 @@
-# @holyfata/qrcode-react
+# @holyfata/qrcode-vue
 
 ## 2.0.0
 
@@ -10,14 +10,3 @@
 
 - Updated dependencies [0f07450]
   - @holyfata/qrcode-vanilla@2.0.0
-
-## 1.0.0
-
-### Major Changes
-
-- no
-
-### Patch Changes
-
-- Updated dependencies
-  - @holyfata/qrcode-vanilla@1.0.0
