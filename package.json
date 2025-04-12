@@ -3,11 +3,13 @@
 		"dev": "turbo run dev",
 		"build": "turbo run build",
 		"build:pkg": "turbo run build:pkg",
-		"version": "changeset version"
+		"version": "changeset version",
+		"release": "turbo run release"
 	},
 	"devDependencies": {
 		"@changesets/cli": "2.28.1",
 		"@types/node": "^22.13.5",
+		"changelogen": "0.6.1",
 		"prettier": "3.5.3",
 		"turbo": "2.5.0",
 		"typescript": "5.8.3"

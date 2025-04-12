@@ -36,6 +36,7 @@
                 "@holyfata/qrcode-react#build",
                 "@holyfata/qrcode-vue#build"
             ]
-        }
+        },
+        "release": {}
     }
 }

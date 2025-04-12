@@ -32,7 +32,7 @@
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "generate": "stencil generate",
-    "release": "changelogen --bump --release"
+    "release": "changelogen --bump"
   },
   "devDependencies": {
     "@stencil/core": "^4.27.1",

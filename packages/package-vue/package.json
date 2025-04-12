@@ -8,7 +8,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "rslib build && vue-tsc",
-    "release": "changelogen --bump --release --no-tag"
+    "release": "changelogen --bump --no-tag"
   },
   "devDependencies": {
     "@rsbuild/plugin-vue": "1.0.7",

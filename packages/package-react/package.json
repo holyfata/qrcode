@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build": "rslib build",
-    "release": "changelogen --bump --release --no-tag"
+    "release": "changelogen --bump --no-tag"
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "1.2.0",
