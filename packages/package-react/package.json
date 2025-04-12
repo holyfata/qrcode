@@ -1,6 +1,6 @@
 {
   "name": "@holyfata/qrcode-react",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "type": "module",
   "exports": {
     ".": {
@@ -14,7 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rslib build"
+    "build": "rslib build",
+    "release": "changelogen --bump --release --publishTa=false"
   },
   "devDependencies": {
     "@rsbuild/plugin-react": "1.2.0",
