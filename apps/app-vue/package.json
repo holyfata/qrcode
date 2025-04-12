@@ -13,7 +13,7 @@
   "devDependencies": {
     "@rspack/cli": "^1.3.4",
     "@rspack/core": "^1.3.4",
-    "package-vue": "workspace:*",
+    "@holyfata/qrcode-vue": "workspace:*",
     "ts-node": "^10.9.2",
     "vue-loader": "^17.4.2"
   }

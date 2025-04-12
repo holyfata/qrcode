@@ -4,14 +4,14 @@ import { vueOutputTarget, ComponentModelConfig } from '@stencil/vue-output-targe
 
 
 export const config: Config = {
-  namespace: 'package-vanilla',
+  namespace: 'qrcode-vanilla',
   outputTargets: [
     reactOutputTarget({
       // Relative path to where the React components will be generated
       outDir: '../package-react/src/stencil-output',
     }),
     vueOutputTarget({
-      componentCorePackage: 'package-vanilla',
+      componentCorePackage: '@holyfata/qrcode-vanilla',
       includeDefineCustomElements: true,
       proxiesFile: '../package-vue/src/stencil-output/components.ts'
     }),

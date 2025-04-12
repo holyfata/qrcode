@@ -1,5 +1,5 @@
 {
-  "name": "package-vue",
+  "name": "@holyfata/qrcode-vue",
   "private": true,
   "type": "module",
   "main": "./dist/index.js",
@@ -12,12 +12,12 @@
     "@rsbuild/plugin-vue": "1.0.7",
     "@rslib/core": "0.6.2",
     "@stencil/vue-output-target": "0.10.7",
-    "package-vanilla": "workspace:*",
+    "@holyfata/qrcode-vanilla": "workspace:*",
     "vue": "3.5.13",
     "vue-tsc": "2.2.8"
   },
   "peerDependencies": {
-    "package-vanilla": "workspace:*",
+    "@holyfata/qrcode-vanilla": "workspace:*",
     "vue": ">=3.0.0"
   }
 }

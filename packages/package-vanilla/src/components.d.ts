@@ -7,6 +7,9 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface HfQrcode {
+        "options": object | undefined;
+        "tag": string;
+        "value": string | undefined;
     }
 }
 declare global {
@@ -22,6 +25,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface HfQrcode {
+        "options"?: object | undefined;
+        "tag"?: string;
+        "value"?: string | undefined;
     }
     interface IntrinsicElements {
         "hf-qrcode": HfQrcode;

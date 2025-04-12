@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { HfQrcode } from "package-vue"
+import { HfQrcode } from "@holyfata/qrcode-vue"
 </script>
 
 <template>
 	<div>
-		<HfQrcode />
+		<hf-qrcode value="Hello, World!" :options="{ width: 200 }"></hf-qrcode>
 	</div>
 </template>

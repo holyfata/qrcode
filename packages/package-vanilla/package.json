@@ -1,5 +1,5 @@
 {
-  "name": "package-vanilla",
+  "name": "@holyfata/qrcode-vanilla",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
@@ -7,11 +7,11 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/package-vanilla/package-vanilla.esm.js",
+  "unpkg": "dist/qrcode-vanilla/qrcode-vanilla.esm.js",
   "exports": {
     ".": {
-      "import": "./dist/package-vanilla/package-vanilla.esm.js",
-      "require": "./dist/package-vanilla/package-vanilla.cjs.js"
+      "import": "./dist/qrcode-vanilla/qrcode-vanilla.esm.js",
+      "require": "./dist/qrcode-vanilla/qrcode-vanilla.cjs.js"
     },
     "./loader": {
       "import": "./loader/index.js",
@@ -36,7 +36,11 @@
   "devDependencies": {
     "@stencil/core": "^4.27.1",
     "@stencil/react-output-target": "1.0.2",
-    "@stencil/vue-output-target": "0.10.7"
+    "@stencil/vue-output-target": "0.10.7",
+    "@types/qrcode": "1.5.5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "qrcode": "1.5.4"
+  }
 }

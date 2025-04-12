@@ -1,5 +1,5 @@
 {
-  "name": "package-react",
+  "name": "@holyfata/qrcode-react",
   "version": "0.0.0",
   "type": "module",
   "exports": {
@@ -21,13 +21,13 @@
     "@rslib/core": "0.6.2",
     "@stencil/react-output-target": "1.0.2",
     "@types/react": "19.1.1",
-    "package-vanilla": "workspace:*",
+    "@holyfata/qrcode-vanilla": "workspace:*",
     "react": "19.1.0"
   },
   "peerDependencies": {
     "@stencil/react-output-target": "1.0.2",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0",
-    "package-vanilla": "workspace:*"
+    "@holyfata/qrcode-vanilla": "workspace:*"
   }
 }

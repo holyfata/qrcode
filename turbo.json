@@ -4,30 +4,37 @@
         "build": {
             "outputs": ["dist/**"],
             "dependsOn": [
-                "package-vanilla#build",
-                "package-react#build",
-                "package-vue#build"
+                "@holyfata/qrcode-vanilla#build",
+                "@holyfata/qrcode-react#build",
+                "@holyfata/qrcode-vue#build"
             ]
         },
-        "package-vanilla#build": {
+        "build:pkg": {
+            "dependsOn": [
+                "@holyfata/qrcode-vanilla#build",
+                "@holyfata/qrcode-react#build",
+                "@holyfata/qrcode-vue#build"
+            ]
+        },
+        "@holyfata/qrcode-vanilla#build": {
             "outputs": ["dist/**"]
         },
-        "package-react#build": {
+        "@holyfata/qrcode-react#build": {
             "outputs": ["dist/**"],
             "dependsOn": [
-                "package-vanilla#build"
+                "@holyfata/qrcode-vanilla#build"
             ]
         },
-        "package-vue#build": {
+        "@holyfata/qrcode-vue#build": {
             "outputs": ["dist/**"],
             "dependsOn": [
-                "package-vanilla#build"
+                "@holyfata/qrcode-vanilla#build"
             ]
         },
         "dev": {
             "dependsOn": [
-                "package-react#build",
-                "package-vue#build"
+                "@holyfata/qrcode-react#build",
+                "@holyfata/qrcode-vue#build"
             ]
         }
     }

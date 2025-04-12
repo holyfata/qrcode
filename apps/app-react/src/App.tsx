@@ -1,10 +1,9 @@
-import { useState } from "react";
-import { HfQrcode } from "package-react"
+import { HfQrcode } from "@holyfata/qrcode-react"
 
 function App() {
 	return (
 		<div className="App">
-			<HfQrcode></HfQrcode>
+			<HfQrcode value="Hello, World!" options={{ width: 200 }}></HfQrcode>
 		</div>
 	);
 }
